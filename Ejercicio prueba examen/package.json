@@ -1,0 +1,8 @@
+{
+  "name": "tienda-de-videojuegos",
+  "type": "module",
+  "scripts": {
+    "pruebas": "node pruebas.js",
+    "informe": "node main.js"
+  }
+}
