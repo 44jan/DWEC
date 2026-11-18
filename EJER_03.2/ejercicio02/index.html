@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Acordeón de FAQ</title>
+  <style>
+    ul {
+      list-style: none;
+      width: 500px;
+      margin: 20px auto;
+      padding: 0;
+    }
+
+    li {
+      border: 1px solid #ccc;
+      margin-bottom: 8px;
+      padding: 10px;
+    }
+
+    /* La pregunta parece clicable */
+    h2 {
+      margin: 0;
+      font-size: 18px;
+      cursor: pointer;
+    }
+
+    /* Clase que oculta las respuestas */
+    .oculto {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <ul id="faq">
+    <!-- Cada li tiene una pregunta (h2) y su respuesta (p oculta) -->
+    <li>
+      <h2>¿Qué es JavaScript?</h2>
+      <p class="oculto">Es un lenguaje de programación que se ejecuta en el navegador.</p>
+    </li>
+    <li>
+      <h2>¿Qué es el DOM?</h2>
+      <p class="oculto">Es la representación en forma de árbol de la página HTML.</p>
+    </li>
+    <li>
+      <h2>¿Para qué sirve classList?</h2>
+      <p class="oculto">Para añadir, quitar o comprobar clases de un elemento.</p>
+    </li>
+  </ul>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista de tareas</title>
+  <style>
+    #app {
+      width: 400px;
+      margin: 20px auto;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    li button {
+      margin-left: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <input type="text" id="texto" placeholder="Nueva tarea">
+    <button id="boton-anadir">Añadir</button>
+
+    <!-- Lista vacía: JS irá añadiendo tareas -->
+    <ul id="lista"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!-- Indica que es un documento HTML5 -->
+<html lang="es">
+<head>
+  <!-- Codificación de caracteres: necesaria para tildes y ñ -->
+  <meta charset="UTF-8">
+  <title>Galería de imágenes</title>
+  <style>
+    /* Contenedor principal de la galería */
+    #galeria {
+      width: 500px;
+      margin: 20px auto;
+      text-align: center;
+    }
+
+    /* Imagen grande: ocupa todo el ancho del contenedor */
+    #imagen-principal {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    /* Fila de miniaturas, una al lado de otra */
+    #miniaturas {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    /* Cada miniatura ocupa el mismo espacio y tiene un borde transparente
+       (así, al poner borde de color, la imagen no "salta") */
+    .miniatura {
+      width: 25%;
+      cursor: pointer;
+      border: 4px solid transparent;
+      border-radius: 4px;
+    }
+
+    /* Clase que añade el JS a la miniatura seleccionada (extra) */
+    .miniatura.activa {
+      border-color: orange;
+    }
+  </style>
+</head>
+<body>
+  <!-- Div principal de la galería -->
+  <div id="galeria">
+    <!-- Imagen grande que cambiará su src -->
+    <img id="imagen-principal" src="https://picsum.photos/id/10/600/400" alt="Imagen principal">
+
+    <!-- Div con las 4 miniaturas, todas con la clase "miniatura" -->
+    <div id="miniaturas">
+      <img class="miniatura" src="https://picsum.photos/id/10/600/400" alt="Miniatura 1">
+      <img class="miniatura" src="https://picsum.photos/id/20/600/400" alt="Miniatura 2">
+      <img class="miniatura" src="https://picsum.photos/id/30/600/400" alt="Miniatura 3">
+      <img class="miniatura" src="https://picsum.photos/id/40/600/400" alt="Miniatura 4">
+    </div>
+  </div>
+
+  <!-- El script va al final del body para que los elementos ya existan al ejecutarse -->
+  <script src="script.js"></script>
+</body>
+</html>

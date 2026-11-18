@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Pestañas</title>
+  <style>
+    #pestanas, #contenidos {
+      width: 400px;
+      margin: 20px auto 0;
+    }
+
+    #pestanas button {
+      padding: 8px 16px;
+      cursor: pointer;
+    }
+
+    .contenido {
+      border: 1px solid #ccc;
+      padding: 16px;
+    }
+
+    .oculto {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Botones: data-id coincide con el id del contenido que deben mostrar -->
+  <div id="pestanas">
+    <button data-id="tab1">Pestaña 1</button>
+    <button data-id="tab2">Pestaña 2</button>
+    <button data-id="tab3">Pestaña 3</button>
+  </div>
+
+  <!-- Contenidos: todos tienen la clase "contenido" y empiezan ocultos -->
+  <div id="contenidos">
+    <div class="contenido oculto" id="tab1">Contenido de la pestaña 1</div>
+    <div class="contenido oculto" id="tab2">Contenido de la pestaña 2</div>
+    <div class="contenido oculto" id="tab3">Contenido de la pestaña 3</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

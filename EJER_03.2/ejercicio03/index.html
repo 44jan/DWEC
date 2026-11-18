@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Validación de formulario</title>
+  <style>
+    form {
+      width: 300px;
+      margin: 20px auto;
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 6px;
+      box-sizing: border-box;
+    }
+
+    #informe-errores {
+      width: 300px;
+      margin: 0 auto;
+    }
+
+    #informe-errores p {
+      margin: 4px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- novalidate evita que el navegador valide por su cuenta -->
+  <form id="formulario" novalidate>
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre">
+
+    <label for="email">Email</label>
+    <input type="text" id="email">
+
+    <button type="submit">Enviar</button>
+  </form>
+
+  <!-- Aquí se escribirá el informe -->
+  <div id="informe-errores"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

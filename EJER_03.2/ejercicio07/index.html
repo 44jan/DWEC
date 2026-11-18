@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrito de la compra</title>
+  <style>
+    .columnas {
+      display: flex;
+      gap: 40px;
+      width: 600px;
+      margin: 20px auto;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    li button {
+      margin-left: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="columnas">
+    <div>
+      <h2>Productos</h2>
+      <ul id="productos">
+        <!-- El precio se guarda en data-price -->
+        <li data-price="10">Camiseta - 10 € <button class="anadir">Añadir al carrito</button></li>
+        <li data-price="25">Pantalón - 25 € <button class="anadir">Añadir al carrito</button></li>
+        <li data-price="40">Zapatillas - 40 € <button class="anadir">Añadir al carrito</button></li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Carrito</h2>
+      <ul id="carrito"></ul>
+      <p>Total: <span id="total">0</span> €</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
